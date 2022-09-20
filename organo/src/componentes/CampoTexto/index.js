@@ -2,11 +2,13 @@ import './CampoTexto.css'
 
 // outra forma de declarar uma função
 
-const CampoTexto = () => {
+const CampoTexto = (props) => {
     return (
-        <div>
-            <label>Nome</label>
-            <input></input>
+        <div className="campo-texto">
+            <label>
+                {props.label}
+            </label>
+            <input placeholder={props.placeholder}/>
         </div>
     )
 }
